@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Testimonio from './componentes/Testimonio.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div className='contenedor-pricipal'>
+      <h1>Esto es lo que dicen los chirris Testimomios </h1>
+     <Testimonio
+     nombre='Luis Cuzumbo'
+     pais='Sobeland'
+     imagen='tendon'
+     cargo='Campanero'
+     empresa='lovaina'
+     testimonio='Me toco tirarme del barco durisimo' />
+
+<Testimonio
+     nombre='Pedro carranga'
+     pais='Sobeland'
+     imagen='momia'
+     cargo='Campanero'
+     empresa='lovaina'
+     testimonio='Me toco tirarme del barco durisimo' />
+     </div> 
     </div>
   );
 }
 
 export default App;
+
+
